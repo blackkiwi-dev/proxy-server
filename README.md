@@ -8,7 +8,7 @@ axios, puppeteer 크롤링시 ip 우회를 위한 프록시 서버
 
 ```
 docker build . --tag nginx-forward-proxy:0.0.1
-docker run -d -p 3128:3128 --name proxy-server nginx-forward-proxy:0.0.1
+docker run -d -p 3128:3128 --name proxy-server --restart=always nginx-forward-proxy:0.0.1
 ```
 
 ## Test
